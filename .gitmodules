@@ -1,0 +1,6 @@
+[submodule "dashboard"]
+	path = dashboard
+	url = git@github.com:Miyunn/slt-custom-usage-dashboard.git
+[submodule "backend"]
+	path = backend
+	url = git@github.com:Miyunn/slt-custom-usage-dashbaord-backend.git
