@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: ./backend
+    container_name: usage-tracker-backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/docker.env
+    volumes:
+      - /home/miyunn/Documents/git/usage-tracker/data-usage-log/:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build: ./dashboard
+    container_name: usage-tracker-dashboard
+    ports:
+      - "3000:80"
+    restart: unless-stopped
